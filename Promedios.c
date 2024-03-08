@@ -1,14 +1,14 @@
 #include<stdio.h>
 main(){
  int opcion;
- int num1;
- int num2;
- int num3;
- float  resultPP;
- float  resultSP;
- float  resultTP;
- float  promedio;
- float resultado;
+ float num1;
+ float num2;
+ float num3;
+ float resultPP;
+ float resultSP;
+ float resultTP;
+ float promedio;
+ float result;
 
   do{
     system("cls");//clear screen//
@@ -25,8 +25,8 @@ main(){
     scanf("%f",&num1);
     printf("Ingresa la calificacion de evaluacion continua: ");
     scanf("%f",&num2);
-    resultPP=(num1*.3)+(num2*.7)/2;
-    printf("Promedio de Primer parcial es:%f\n",resultado);
+    resultPP=(num1*.3)+(num2*.7);
+    printf("Promedio de Primer parcial es:%f\n", resultPP);
     break;
 
     case 2:
@@ -34,27 +34,23 @@ main(){
     scanf("%f",&num1);
     printf("Ingresa la calificacion de evaluacion continua: ");
     scanf("%f",&num2);
-    resultado=num1-num2;
-    printf("Promedio de Segundo parcial:%f\n",resultado);
+    resultSP=(num1*.3)+(num2*.7);
+    printf("Promedio de Segundo parcial:%f\n",resultSP);
     break;
+
     case 3:
     printf("Ingresa la calificacion del examen: ");
     scanf("%f",&num1);
     printf("Ingresa la calificacion de evaluacion continua: ");
     scanf("%f",&num2);
-    resultado=num1*num2;
-    printf("Promedio de Tercer parcial:%f\n",resultado);
+    resultTP=(num1*.3)+(num2*.7);
+    printf("Promedio de Tercer parcial:%f\n",resultTP);
     break;
 
     case 4:
-    printf("Ingresa la calificacion del primer parcial");
-    scanf("%f",&num1);
-    printf("Ingresa la calificacion del segundo parcial");
-    scanf("%f",&num2);
-    printf("Ingresa la calificacion del tercer parcial");
-    scanf("%f",&num3);
-    promedio=num1+num2+num3/3;
-    printf("El promedio final es: %f\n",promedio);
+    promedio=(resultPP)+(resultSP)+(resultTP);
+    result=promedio/3;
+    printf("El promedio final es: %f\n",result);
     break;
 
     case 5:
@@ -64,5 +60,4 @@ main(){
     }//SWITCH//
     system("pause");
     }while(opcion != 5);
-
 }
