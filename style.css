@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(236, 222, 222);
+    background-image: url("../img/noeasy.png");
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    color: rgb(146, 175, 255)!important; 
+}
+
+.inicio img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:solid rgb(0, 0, 0) 10px;
+}
+
+.inicio, #galeria{
+    color: rgb(110, 170, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
